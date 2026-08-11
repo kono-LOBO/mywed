@@ -1,0 +1,335 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #77f577;
+}
+header{
+    background: rgb(241, 244, 207);
+    color: rgb(0, 0, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.logo img{
+    width: 120px;
+    height: auto;
+}
+
+.header-text h1{
+    font-size: 36px;
+}
+
+.header-text p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+nav{
+    background: #8B4513;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #FFD700;
+}
+.hero{
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background: orange;
+    color: white;
+
+    padding: 15px 35px;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #ff6600;
+}
+.about{
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.about h2{
+    font-size: 36px;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+.products{
+    padding:60px 10%;
+    background:#fff5ee;
+}
+
+.products h2{
+    text-align:center;
+    color:#8B4513;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card p{
+    margin:10px 0;
+}
+
+.card button{
+    background:#d2691e;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#8B4513;
+}
+.emoji{
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.promotion{
+    padding:60px 10%;
+}
+
+.promotion h2{
+    text-align:center;
+    color:#8B4513;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#d2691e;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f9f9f9;
+}
+.contact{
+    padding:60px 10%;
+    background:#fff5ee;
+}
+
+.contact h2{
+    text-align:center;
+    color:#8B4513;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form select,
+form textarea{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+}
+
+form input[type="submit"]{
+
+    background:#d2691e;
+
+    color:white;
+
+    cursor:pointer;
+
+    border:none;
+
+    font-size:18px;
+}
+
+form input[type="submit"]:hover{
+
+    background:#8B4513;
+}
+footer{
+
+    background:#8B4513;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+footer p{
+
+    margin-top:10px;
+}
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    nav ul{
+
+        flex-direction:column;
+    }
+
+    .product-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero h2{
+
+        font-size:32px;
+    }
+
+    .hero p{
+
+        font-size:18px;
+    }
+
+}
+.review{
+    padding:60px 10%;
+    background:#ffffff;
+}
+
+.review h2{
+    text-align:center;
+    color:#8B4513;
+    margin-bottom:30px;
+}
+
+.review-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.review-card{
+    width:300px;
+    background:#fff5ee;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.review-card h4{
+    margin-top:15px;
+    color:#8B4513;
+}
